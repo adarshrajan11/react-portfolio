@@ -2,10 +2,19 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const Bubbles = () => {
-  const numberOfBubbles = 20 // Adjust the number of bubbles as needed
+  const numberOfBubbles = 50 // Adjust the number of bubbles as needed
 
   return (
-    <svg className='bubbles'>
+    <svg
+      className='bubbles'
+      style={{
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        top: 0,
+        left: 0,
+      }}
+    >
       {[...Array(numberOfBubbles)].map((_, index) => (
         <motion.circle
           key={index}
@@ -19,7 +28,7 @@ const Bubbles = () => {
             rotate: Math.random() * 360,
             transition: {
               duration: Math.random() * 5 + 5, // Random duration between 5 to 10 seconds
-              yoyo: Infinity, // Animation loops indefinitely
+              repeat: Infinity, // Animation loops indefinitely
             },
           }}
         />

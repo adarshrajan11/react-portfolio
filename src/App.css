@@ -1,0 +1,116 @@
+/* Base styles */
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/sea.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-banner p {
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .hero-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-banner p {
+    font-size: 0.8rem;
+  }
+}
+
+/* My project section start */
+.my-projects {
+  padding: 50px 0;
+  text-align: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.my-projects h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project-card {
+  width: 250px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  background: linear-gradient(135deg, #b8062c, #8b0b7a);
+  /* Dark shades of blue */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  /* Set text color to white */
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #ccc;
+  /* Lighter text color */
+  line-height: 1.5;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 200px;
+    height: 160px;
+  }
+}

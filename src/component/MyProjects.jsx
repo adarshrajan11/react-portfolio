@@ -1,8 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Bubbles from './Bubbles' // Import the Bubbles component
 import project1 from '../assets/data.jpg'
 import project2 from '../assets/netflix.jpg'
 import project3 from '../assets/Hrms.jpg'
+
 const projects = [
   {
     id: 1,
@@ -46,6 +48,7 @@ const MyProjects = () => {
           </motion.div>
         ))}
       </div>
+      <Bubbles />
     </div>
   )
 }

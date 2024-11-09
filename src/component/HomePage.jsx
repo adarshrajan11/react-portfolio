@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Bubbles from './Bubbles'
-import banner from '../assets/key.jpg'
+import banner from '../assets/woodBg.jpg'
 
 const HomePage = () => {
   return (
